@@ -1,0 +1,80 @@
+:root{
+    --primary-color: #00b0f0;
+    --rare-color: #6ec1e4;
+    --white: #fff;
+    --black: #000;
+    --offWhite: #efeeee;
+    --txtGray: #514e4e;
+    --gray-color:rgb(172, 172, 172);
+}
+
+.container{ max-width: 100%;}
+.btn1,.btn2,.btn3{width: 60%;}
+.grid,.grid2,.grid3{ grid-template-columns: 1fr;}
+
+#navbar .container ul { 
+    position: absolute;
+    text-align: center;
+    width: 43%;
+    top: 6vh;
+    background-color: var(--white);
+    left: -100%;
+    height: 90vh;
+    flex-direction: column;
+    transition: 1s;
+}
+#navbar .container ul .nested:hover .list-2 {
+    position: absolute;
+    left:100%;
+    top: 63%;
+    padding:2rem 0;
+}
+#navbar .container input:checked ~ ul{ left:  0; }
+.hamburger { display:block;}
+#navbar .container ul .nested .list-2 .top{padding-top: 0; }
+#navbar .container ul .nested .list-2 li{padding: 10px 5px;}
+
+
+#header >div .btn1{width: 100%;}
+#header >div p {display: none;}
+
+#Section2 .bg-img{ display: none;}
+#Section2 .txt{ padding:5rem  0.5rem};
+
+
+#Section5{padding:3rem 1rem;}
+#Section5 .grid2{ grid-template-columns: repeat(1,1fr); }
+
+#section6 .grid3 {padding:5px;}
+#section6 .grid3 .grid3{grid-template-columns: 1fr;}
+#section6 .grid3 .textarea{ grid-column: 1 / 1; max-width: 100%;}
+
+#section7{flex-direction: column; width: 85%; margin-left: 7.5%; padding: 1.5rem;}
+#section7::before{display: none;}
+
+#footer .grid{grid-template-columns: 1fr;}
+#footer .content{flex-direction: column;}
+
+#project-header .grid2 div{height: 40vh;}
+.project{margin-left: 5%;}
+
+#blog-header{padding: 0.5rem;}
+#blog-header .content div h3{font-size: 25px;}
+#blog-header .content div ul{flex-direction: column; gap: 10px; align-items: flex-start;}
+#blog-header .content .btn2{margin-left: 0;}
+#blog-header{grid-template-columns: 1fr;}
+
+#Section4 .grid2{ grid-template-columns: 1fr; padding: 4%;}
+
+.none {display: none;}
+
+#Section3-about , #Section4-about , #Section5-about , #Section6-about {padding: 1rem 0;}
+#Section3-about .big , #Section4-about .big , #Section5-about .big {padding:0.75rem}
+#Section3-about .small1 , #Section4-about .small1 , #Section5-about .small1 , #Section6-about .small1{padding: 1rem;}
+
+
+
+#Section3-service1{padding: 3rem 0;}
+#Section3-service1 .btn2{padding: 0 1rem;}
+
+#Section2-service1 .card{width: 95%; margin-left: 2.5%; padding:6px 0;}
